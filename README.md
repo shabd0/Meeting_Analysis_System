@@ -35,33 +35,45 @@ The system takes a meeting audio recording between multiple speakers (e.g., a ma
 
 🧠 System Architecture :
 
+
 🎤 Audio Input
+
+     
       ↓
+      
 🗣️  Voice Diarization (Speaker segmentation)
+
       ↓
+      
 📝  Speech-to-Text (Whisper / Wav2Vec2)
+
       ↓
+      
 📊  Feature Extraction (Fine-tuned Models)
+
       ↓
+      
 🤖  AI Recommendations (Mistral-7B)
+
       ↓
+      
 📄  Structured Report (CSV + Text Summary)
 
 ⚙️ Tech Stack
 
-Python
+• Python
 
-PyTorch
+• PyTorch
 
-Hugging Face Transformers
+• Hugging Face Transformers
 
-Mistral-7B-Instruct-v0.2
+• Mistral-7B-Instruct-v0.2
 
-OpenAI Whisper / Wav2Vec2
+• OpenAI Whisper / Wav2Vec2
 
-pandas, numpy, scikit-learn
+• pandas, numpy, scikit-learn
 
-pyAudioAnalysis / speechbrain
+• pyAudioAnalysis / speechbrain
 
 🧩 Main Files
 File	Description
@@ -70,9 +82,9 @@ airecommendation.py	Uses Mistral-7B model to generate intelligent meeting recomm
 training_model.ipynb	Notebook used to train and fine-tune classification models.
 
 
-💡 Project Highlights
+💡 Project Highlights: 
 
-✨ Combined multiple models trained on custom data.
-✨ Fine-tuned for meeting-specific insights.
-✨ Integrated LLM reasoning to generate meaningful feedback.
-✨ Full automation pipeline from audio → understanding → recommendations.
+• Combined multiple models trained on custom data.
+• Fine-tuned for meeting-specific insights.
+• Integrated LLM reasoning to generate meaningful feedback.
+• Full automation pipeline from audio → understanding → recommendations.
