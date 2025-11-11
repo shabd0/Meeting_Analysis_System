@@ -36,28 +36,18 @@ The system takes a meeting audio recording between multiple speakers (e.g., a ma
 🧠 System Architecture :
 
 
-🎤 Audio Input
+               Audio Input
+                    ↓
+    Voice Diarization (Speaker segmentation)
+                    ↓
+    Speech-to-Text (Whisper / Wav2Vec2)
+                    ↓
+    Feature Extraction (Fine-tuned Models)
+                    ↓
+    AI Recommendations (Mistral-7B)
+                    ↓
+    structured Report (CSV + Text Summary)
 
-     
-      ↓
-      
-🗣️  Voice Diarization (Speaker segmentation)
-
-      ↓
-      
-📝  Speech-to-Text (Whisper / Wav2Vec2)
-
-      ↓
-      
-📊  Feature Extraction (Fine-tuned Models)
-
-      ↓
-      
-🤖  AI Recommendations (Mistral-7B)
-
-      ↓
-      
-📄  Structured Report (CSV + Text Summary)
 
 ⚙️ Tech Stack
 
