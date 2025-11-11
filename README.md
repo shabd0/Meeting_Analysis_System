@@ -75,6 +75,9 @@ training_model.ipynb	Notebook used to train and fine-tune classification models.
 💡 Project Highlights: 
 
 • Combined multiple models trained on custom data.
+
 • Fine-tuned for meeting-specific insights.
+
 • Integrated LLM reasoning to generate meaningful feedback.
+
 • Full automation pipeline from audio → understanding → recommendations.
